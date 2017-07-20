@@ -158,3 +158,13 @@ hr {
 .white {
   color: white;
 }
+
+.modal-lg {
+  width: 1200px;
+  max-width: 100%;
+  margin: 15px auto;
+}
+
+.carousel img {
+  object-fit: fill;
+}
