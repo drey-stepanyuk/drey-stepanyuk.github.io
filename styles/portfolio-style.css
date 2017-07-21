@@ -15,6 +15,7 @@ body {
 
 h1 {
   font-family: 'Permanent Marker', sans-serif;
+
 }
 
 p, h4, h2 {
@@ -58,16 +59,18 @@ hr {
   padding: .8rem .5rem;
 }
 
+#glow{
+  text-shadow: .2rem .1rem .1rem black;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 10vw;
+  color: #FAEBD7;
+}
+
 #sub-glow {
   font-family: 'Permanent Marker', sans-serif;
   color: #FAEBD7;
   text-shadow: -.1rem -.1rem .1rem black;
-}
-
-#glow{
-  text-shadow: .2rem .1rem .1rem black;
-  font-family: 'Permanent Marker', sans-serif;
-  color: #FAEBD7;
+  font-size: 6vw;
 }
 
 #glow:hover {
