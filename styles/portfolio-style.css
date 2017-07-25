@@ -121,6 +121,10 @@ hr {
   clear: both;
 }
 
+#projects a {
+  color: #292b2c;
+}
+
 #contact {
   background-color: #565342;
   margin-top: 5rem;
@@ -170,4 +174,16 @@ hr {
 
 .carousel img {
   object-fit: fill;
+}
+
+.btn-outline-secondary {
+  color: #292b2c;
+  border-color: #292b2c;
+  box-shadow: 0px 0px 5px #565342;
+}
+
+.btn-outline-secondary:hover {
+  color: #FAEBD7;
+  background-color: #565342;
+  box-shadow: 0px 0px 5px #565342;
 }
