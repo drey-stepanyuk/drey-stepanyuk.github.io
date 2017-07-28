@@ -156,6 +156,7 @@ hr {
 
 #icons a:hover {
   color: #292b2c;
+  text-decoration: none;
 }
 
 .green {
@@ -174,6 +175,10 @@ hr {
 
 .carousel img {
   object-fit: fill;
+}
+
+#bc-modal-label {
+  font-family: 'Roboto', sans-serif;
 }
 
 #business-cards {
