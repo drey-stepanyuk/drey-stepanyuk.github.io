@@ -62,21 +62,22 @@
         <div class="col-lg-6">
           <h1>Hey <span class="green">there!</span></h1>
           <h2>My name is Drey Stepanyuk, a software developer base out
-          of Charlotte N.C. Focused on UI/UX architecture with a background in
+          of Charlotte N.C. focused on UI/UX architecture with a background in
           Java.</h2>
           <p>
             I have been a developer for 3+ years and enjoy producing creative
             sites, designing products, and creating web apps. Some of the technologies
-            I use are CSS, HTML, Javascript, jQuery, Bootstrap, and React.
+            I use are CSS, HTML, Javascript, jQuery, Bootstrap, React, and Java.
           </p>
           <p>
             What seperates me from other developers is my work ethic. I am not
-            only willing but eager to learn. I commit 100% to every project I do
-            and can't stand still until it's completed.
+            only willing, but eager to learn. I am self driven and can thank my
+            experience of being on a pro-am race team for that. I'm a firm believer
+            in that, what you put in, is what you get back.
           </p>
           <p>
-            Outside of coding I am an avid automotive enthusiast and enjoy trying
-            different kinds of beers.
+            Outside of coding I am an avid automotive enthusiast, a big foodie,
+            gamer, and enjoy traveling.
           </p>
         </div>
         <div class="col-lg-6">
@@ -94,43 +95,41 @@
         <p class="lead">Here are a few projects I'm currently working on.</p>
       </div>
       <div class="card-deck">
+
+        <!-- Codepen Card -->
         <div class="card">
-          <img class="card-img-top" src="images/codepen-akuma.png" alt="Card image cap">
+          <a href="https://codepen.io/drey-stepanyuk/pens/public/" alt="https://codepen.io" target="_blank"><img class="card-img-top" src="images/codepen-akuma.png" alt="Card image cap"></a>
           <div class="card-block">
             <h4 class="card-title text-center">
-              <i class="fa fa-codepen" aria-hidden="true"></i> <a href="https://codepen.io/drey-stepanyuk/pens/public/">CodePen</a>
+              <i class="fa fa-codepen" aria-hidden="true"></i> CodePen
             </h4>
             <p class="card-text">All of my mini projects that I've done or experimented
             with inside of CodePen can be found here.</p>
           </div>
         </div>
 
+        <!-- React Weather App Card -->
         <div class="card">
-          <img class="card-img-top" src="images/weather.png" alt="Card image cap">
+          <a href="http://blooming-brook-44749.herokuapp.com" alt="https://heroku.com" target="_blank"><img class="card-img-top" src="images/weather.png" alt="Card image cap"></a>
           <div class="card-block">
             <h4 class="card-title text-center">
-              <i class="fa fa-cloud" aria-hidden="true"></i> <a href="http://blooming-brook-44749.herokuapp.com">React Weather</a>
+              <i class="fa fa-cloud" aria-hidden="true"></i> React Weather
             </h4>
             <p class="card-text">This is a simple weather app that is currently under
             construction but shows the weather and conditions of any US city. The app
             was built using React, Underground Weather API, Foundation, and deployed through Heroku.
-            The GitHub repository can be found <a href="https://github.com/drey-stepanyuk/ReactWeather"><u>here</u></a>.</p>
+            The GitHub repository can be found <a href="https://github.com/drey-stepanyuk/ReactWeather" alt="https://github.com" target="_blank"><u>here</u></a>.</p>
           </div>
         </div>
 
-        <!-- Card w/ Modal and Carousel -->
+        <!-- Business Card w/ Modal and Carousel -->
         <div class="card">
-          <img class="card-img-top" src="images/kpops-card.png" alt="Card image cap">
+          <img class="card-img-top" src="images/kpops-card.png" alt="Card image cap" id="business-cards">
           <div class="card-block">
             <h4 class="card-title text-center"><i class="fa fa-vcard" aria-hidden="true"></i> Business Cards</h4>
-            <p class="card-text">Outside of software developement, I am also a graphic designer.
+            <p class="card-text">Outside of software developement, I also enjoy graphic design.
             Examples of business cards I've made for two local business can be seen here. The technologies
             used to make these graphics are Adobe Photoshop and Illustrator.</p>
-            <p class="text-center">
-            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#bcModal">
-              View Cards
-            </button>
-          </p>
           </div>
         </div>
       </div>
@@ -138,7 +137,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="bcModal" tabindex="-1" role="dialog" aria-labelledby="bcModalLabel" aria-hidden="true">
+    <div class="modal fade" id="bc-modal" tabindex="-1" role="dialog" aria-labelledby="bcModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -212,10 +211,14 @@
     </footer>
 
     <script type="text/javascript">
-    // $('#bcModal').on('show.bs.modal', function () {
-    //   $('.modal .modal-body').css('overflow-y', 'auto');
-    //   $('.modal .modal-body').css('max-height', $(window).height() * 0.8);
-    // });
+    $(document).ready(function() {
+
+      $('#business-cards').click(function() {
+        $('#bc-modal').modal('show')
+      });
+
+    });
+
     </script>
 
   </body>

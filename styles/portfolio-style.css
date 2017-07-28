@@ -176,14 +176,22 @@ hr {
   object-fit: fill;
 }
 
-.btn-outline-secondary {
-  color: #292b2c;
-  border-color: #292b2c;
-  box-shadow: 0px 0px 5px #565342;
+#business-cards {
+  cursor: pointer;
 }
 
-.btn-outline-secondary:hover {
-  color: #FAEBD7;
-  background-color: #565342;
-  box-shadow: 0px 0px 5px #565342;
+.card img:hover {
+  animation: pop 2s linear infinite;
+}
+
+@keyframes pop {
+  0%,
+  100% {
+    transform: scale(1,1);
+    box-shadow: 0px 0px 0px 0px white;
+  }
+  50% {
+    transform: scale(1.05,1.05);
+    box-shadow: 0px 0px 20px 5px #565342;
+  }
 }
