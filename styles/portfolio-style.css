@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
- 
+
  /* Colors:
  Off white used in background: #FDF7EF
  off white used in jumbotron: #FAEBD7
  green color used in footer: #565342
  black color used in footer: #292b2c
  */
- 
+
  body {
    background-color: #FDF7EF;
    position: relative;
  }
- 
+
  h1 {
    font-family: 'Permanent Marker', sans-serif;
- 
+
  }
- 
+
  p, h4, h2 {
    font-family: 'Roboto', sans-serif;
  }
- 
+
  hr {
    border: none;
    height: 10rem;
  }
- 
- 
+
+
  .jumbotron {
    background: linear-gradient(
        to top,
@@ -42,41 +42,41 @@
    width: 100%;
    color: white;
  }
- 
+
  .navbar button {
    background: white;
  }
- 
+
  .navbar {
    background-color: #FDF7EF;
    padding: 0;
  }
- 
+
  #nav-bar a{
    font-size: 1rem;
    font-style: oblique;
    font-family: 'Roboto', sans-serif;
    padding: .8rem .5rem;
  }
- 
+
  #glow{
    text-shadow: .2rem .1rem .1rem black;
    font-family: 'Permanent Marker', sans-serif;
    font-size: 10vw;
    color: #FAEBD7;
  }
- 
+
  #sub-glow {
    font-family: 'Permanent Marker', sans-serif;
    color: #FAEBD7;
    text-shadow: -.1rem -.1rem .1rem black;
    font-size: 6vw;
  }
- 
+
  #glow:hover {
    animation: shadow 3s ease infinite;
  }
- 
+
  @keyframes shadow {
    0%,
    100% {
@@ -87,44 +87,44 @@
      color: white;
      stroke-dashoffset:
    }
- 
+
  }
- 
+
  #summary {
    display: block;
  }
- 
+
  .card-img-top {
    width: 100%;
  }
- 
+
  #about {
    padding-top: 5rem;
  }
- 
- 
+
+
  #about h1 {
    font-size: 5rem;
  }
- 
+
  #about h2 {
    padding: 1rem 0;
  }
- 
+
  #about p {
    padding: 1rem 0;
    font-size: 1.2rem;
  }
- 
+
  #projects {
    Padding-top: 5rem;
    clear: both;
  }
- 
+
  #projects a {
    color: #292b2c;
  }
- 
+
  #contact {
    background-color: #565342;
    margin-top: 5rem;
@@ -132,63 +132,63 @@
    padding-top: 6rem;
    padding-bottom: 4rem;
  }
- 
+
  #contact h1 {
    text-shadow: .1rem .1rem .1rem black;
  }
- 
+
  #contact p {
    font-size: 1.2rem;
  }
- 
+
  #contact-info {
    padding: .8rem 0;
  }
- 
+
  #icons {
    word-spacing: 2rem;
  }
- 
- 
+
+
  #icons a {
    color: white;
  }
- 
+
  #icons a:hover {
    color: #292b2c;
    text-decoration: none;
  }
- 
+
  .green {
    color: #565342;
  }
- 
+
  .white {
    color: white;
  }
- 
+
  .modal-lg {
    width: 1200px;
    max-width: 100%;
    margin: 15px auto;
  }
- 
+
  .carousel img {
    object-fit: fill;
  }
- 
+
  #bc-modal-label {
    font-family: 'Roboto', sans-serif;
  }
- 
+
  #business-cards {
    cursor: pointer;
  }
- 
+
  .card img:hover {
    animation: pop 2s linear infinite;
  }
- 
+
  @keyframes pop {
    0%,
    100% {
