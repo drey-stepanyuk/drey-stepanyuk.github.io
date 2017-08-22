@@ -64,6 +64,7 @@
    font-family: 'Permanent Marker', sans-serif;
    font-size: 10vw;
    color: #FAEBD7;
+   animation: floating 20s ease-in-out infinite;
  }
 
  #sub-glow {
@@ -71,14 +72,7 @@
    color: #FAEBD7;
    text-shadow: -.1rem -.1rem .1rem black;
    font-size: 6vw;
-   transform-style: preserve-3d;
-   transition: all 2s linear;
  }
-
- #glow:hover {
-   animation: shadow 3s linear infinite;
- }
-
 
  #summary {
    display: block;
@@ -187,26 +181,21 @@
 
  /* Animations */
 
- /*@keyframes pop {
-   0%,
-   100% {
-     transform: scale(1,1);
-     box-shadow: 0px 0px 0px 0px white;
-   }
-   50% {
-     transform: scale(1.05,1.05);
-     box-shadow: 0px 0px 20px 5px #565342;
-   }
- }*/
-
- @keyframes shadow {
-   0%,
-   100% {
-     text-shadow: 0 0 0 black, 0 0 0 black, 0 0 0 black, 0 0 0 black, 0 0 0 black, .2rem .1rem .1rem black;
-   }
-   50% {
-     text-shadow: 0 0 .5rem #FAEBD7, 0 0 .5rem #FAEBD7, 0 0 1rem black, 0 0 1rem black, 0 0 .1rem #FAEBD7, .3rem .2rem .4rem black;
-     color: white;
-   }
-
- }
+@keyframes floating {
+  0%,
+  100% {
+    transform: skewX(0deg) skewY(0deg);
+  }
+  25% {
+    transform: skewX(-3deg) skewY(-3deg) rotateY(15deg);
+  }
+  35% {
+    transform: skewX(-3deg) skewY(-3deg) rotateY(15deg);
+  }
+  65% {
+    transform: skewX(3deg) skewY(3deg) rotateY(-15deg);
+  }
+  75% {
+    transform: skewX(3deg) skewY(3deg) rotateY(-15deg);
+  }
+}
