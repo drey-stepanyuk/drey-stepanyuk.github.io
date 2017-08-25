@@ -24,7 +24,7 @@
 
  hr {
    border: none;
-   height: 10rem;
+   height: 5rem;
  }
 
 
@@ -107,6 +107,21 @@
 
  #projects a {
    color: #292b2c;
+ }
+
+ .card {
+   width: 30%;
+ }
+
+ .card-row {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: space-around;
+ }
+
+ #card-row-2 {
+   margin-top: 5rem;
  }
 
  #contact {
