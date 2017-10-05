@@ -218,3 +218,15 @@ hr {
         transform: skewX(3deg) skewY(3deg) rotateY(-15deg);
     }
 }
+
+/* Breakpoints */
+
+@media screen and (max-width: 1000px) {
+    #card-row-2 {
+        margin-top: 0rem;
+    }
+
+    .card {
+        margin-top: 3rem;
+    }
+}
