@@ -113,10 +113,6 @@ hr {
     color: #292b2c;
 }
 
-.card {
-    width: 30%;
-}
-
 .card-row {
     display: flex;
     flex-wrap: wrap;
