@@ -29,6 +29,8 @@ hr {
     height: 5rem;
 }
 
+/* Jumbotron header */
+
 
 .jumbotron {
     background: linear-gradient( to top,
@@ -47,6 +49,23 @@ hr {
     align-items: center;
 }
 
+#glow {
+    text-shadow: .2rem .1rem .1rem black;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 10vw;
+    color: #FAEBD7;
+    animation: floating 20s ease-in-out infinite;
+}
+
+#sub-glow {
+    font-family: 'Permanent Marker', sans-serif;
+    color: #FAEBD7;
+    text-shadow: -.1rem -.1rem .1rem black;
+    font-size: 6vw;
+}
+
+/* Navigation */
+
 .navbar button {
     background: white;
 }
@@ -63,27 +82,10 @@ hr {
     padding: .8rem .5rem;
 }
 
-#glow {
-    text-shadow: .2rem .1rem .1rem black;
-    font-family: 'Permanent Marker', sans-serif;
-    font-size: 10vw;
-    color: #FAEBD7;
-    animation: floating 20s ease-in-out infinite;
-}
-
-#sub-glow {
-    font-family: 'Permanent Marker', sans-serif;
-    color: #FAEBD7;
-    text-shadow: -.1rem -.1rem .1rem black;
-    font-size: 6vw;
-}
+/* About Me */
 
 #summary {
     display: block;
-}
-
-.card-img-top {
-    width: 100%;
 }
 
 #about {
@@ -103,6 +105,7 @@ hr {
     padding: 1rem 0;
     font-size: 1.2rem;
 }
+/* Projects and Cards */
 
 #projects {
     Padding-top: 5rem;
@@ -111,6 +114,10 @@ hr {
 
 #projects a {
     color: #292b2c;
+}
+
+.card-img-top {
+    width: 100%;
 }
 
 .card-row {
@@ -123,6 +130,38 @@ hr {
 #card-row-2 {
     margin-top: 5rem;
 }
+
+.card img {
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 0px 20px 5px #565342;
+}
+
+/* Modal and Carousel */
+
+.modal-lg {
+    width: 1200px;
+    max-width: 100%;
+    margin: 15px auto;
+}
+
+.carousel img {
+    object-fit: fill;
+}
+
+#bc-modal-label {
+    font-family: 'Roboto', sans-serif;
+}
+
+#business-cards {
+    cursor: pointer;
+}
+
+/* Contact me & Footer */
 
 #contact {
     background-color: #565342;
@@ -158,40 +197,14 @@ hr {
     text-decoration: none;
 }
 
+/* Spans */
+
 .green {
     color: #565342;
 }
 
 .white {
     color: white;
-}
-
-.modal-lg {
-    width: 1200px;
-    max-width: 100%;
-    margin: 15px auto;
-}
-
-.carousel img {
-    object-fit: fill;
-}
-
-#bc-modal-label {
-    font-family: 'Roboto', sans-serif;
-}
-
-#business-cards {
-    cursor: pointer;
-}
-
-.card img {
-    transform-style: preserve-3d;
-    transition: all 1s ease;
-}
-
-.card img:hover {
-    transform: scale(1.05, 1.05);
-    box-shadow: 0px 0px 20px 5px #565342;
 }
 
 /* Animations */
