@@ -1,14 +1,18 @@
-$(document).ready(function () {
-
-    $('#business-cards').click(function () {
-        $('#bc-modal').modal('show')
-    });
-
-});
-
-$('a[href^="#"]').not('a[href="#"]').on('click', function (e) {
-    e.preventDefault();
-    $('html,body').animate({
-        scrollTop: $(this.hash).offset().top
-    }, 500);
-});
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyJumbotron = [].slice.call(document.querySelectorAll(".lazy-jumbotron"));
+  
+    if ("IntersectionObserver" in window) {
+      let lazyJumbotronObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            lazyJumbotronObserver.unobserve(entry.target);
+          }
+        });
+      });
+  
+      lazyJumbotron.forEach(function(lazyJumbotron) {
+        lazyJumbotronObserver.observe(lazyJumbotron);
+      });
+    }
+  });
