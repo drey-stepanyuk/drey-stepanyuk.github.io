@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var lazyJumbotron = [].slice.call(document.querySelectorAll(".lazy-jumbotron"));
+    let lazyJumbotron = [].slice.call(document.querySelectorAll(".lazy"));
   
     if ("IntersectionObserver" in window) {
       let lazyJumbotronObserver = new IntersectionObserver(function(entries, observer) {
